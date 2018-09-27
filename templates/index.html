@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>龙芯机械臂控制平台</title>
+    <link href="https://cdn.bootcss.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for("static", filename="css/down.css") }}">
+    <link rel="stylesheet" href="{{ url_for("static", filename="css/footer.css") }}">
+</head>
+<body>
+<div class="app">
+    <div class="top">
+        <div class="text-center">
+            <p class="navbar-text navbar-right">武昌首义学院Linxu协会</p>
+        </div>
+    </div>
+    <div class="down">
+        <div class="down-left">
+            <ul class="list-group">
+                <li class="list-group-item">第一舵机
+                    <a class="btn btn-default" href="{{ url_for('action', name='A1') }}" role="button">1-1</a>
+                    <a class="btn btn-default" href="{{ url_for('action', name='A2') }}" role="button">1-2</a>
+                </li>
+                <li class="list-group-item">第二舵机
+                    <a class="btn btn-default" href="{{ url_for('action', name='B1') }}" role="button">2-1</a>
+                    <a class="btn btn-default" href="{{ url_for('action', name='B2') }}" role="button">2-2</a>
+                </li>
+                <li class="list-group-item">第三舵机
+                    <a class="btn btn-default" href="{{ url_for('action', name='C1') }}" role="button">3-1</a>
+                    <a class="btn btn-default" href="{{ url_for('action', name='C2') }}" role="button">3-2</a>
+                </li>
+                <li class="list-group-item">第四舵机
+                    <a class="btn btn-default" href="{{ url_for('action', name='D1') }}" role="button">4-1</a>
+                    <a class="btn btn-default" href="{{ url_for('action', name='D2') }}" role="button">4-2</a></li>
+                <li class="list-group-item">第五舵机
+                    <a class="btn btn-default" href="{{ url_for('action', name='E1') }}" role="button">5-1</a>
+                    <a class="btn btn-default" href="{{ url_for('action', name='E2') }}" role="button">5-2</a>
+                </li>
+                <li class="list-group-item">第六舵机
+                    <a class="btn btn-default" href="{{ url_for('action', name='F1') }}" role="button">6-1</a>
+                    <a class="btn btn-default" href="{{ url_for('action', name='F2') }}" role="button">6-2</a>
+                </li>
+            </ul>
+        </div>
+        <div class="down-right">
+            <img src="{{ url_for("static", filename='img/test.png') }}" class="img-thumbnail">
+        </div>
+    </div>
+    <div class="footer" id="footer">
+      <div class="container">
+        <br>
+        <p>Designed and built by <a href="https://github.com/WSYUTeam" target="_blank">WSYU Team</a></p>
+        <p>Powered by  <a href="https://github.com/WSYUTeam/" target="_blank">WSYU LUG </a> , <a href="http://flask.pocoo.org/" target="_blank">Flask</a> and <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></p>
+      </div>
+    </div>
+</div>
+</body>
+</html>
